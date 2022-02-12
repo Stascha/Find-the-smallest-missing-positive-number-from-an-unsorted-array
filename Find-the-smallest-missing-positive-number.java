@@ -40,8 +40,7 @@ class Solution
      {
         int[] nums = { 1, 4, 2, -1, 6, 5 };
  
-        System.out.println("The smallest missing positive number from the array is "
-                + findSmallestMissing(nums));
+        System.out.println("The smallest missing positive number from the array is " + findSmallestMissing(nums));
      }
     
 }
