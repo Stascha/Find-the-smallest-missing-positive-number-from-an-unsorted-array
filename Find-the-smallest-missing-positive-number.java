@@ -2,7 +2,7 @@ import java.util.*;
 
 class Solution 
 {
-     public static int[] fun(int[] a) 
+     public static int[] DeleteNegativeAndZeroAndDuplicates(int[] a) 
      {
         int j = 0;
 
@@ -26,7 +26,7 @@ class Solution
     public int findSmallestMissing(int[] A) 
     {
         Arrays.sort(A);
-        int[] a = fun(A);
+        int[] a = DeleteNegativeAndZeroAndDuplicates(A);
         int n = a.length;
  
     	for (int i = 0; i < n; i++)
@@ -35,13 +35,13 @@ class Solution
    
     	return n+1;
     }
- 
     
      public static void main(String []args)
      {
         int[] nums = { 1, 4, 2, -1, 6, 5 };
  
-        System.out.println("The smallest missing positive number from the array is " + findSmallestMissing(nums));
+        System.out.println("The smallest missing positive number from the array is "
+                + findSmallestMissing(nums));
      }
     
 }
